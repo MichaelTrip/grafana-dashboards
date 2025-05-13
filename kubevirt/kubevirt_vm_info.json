@@ -50,7 +50,7 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": null,
+  "id": 748,
   "links": [],
   "panels": [
     {
@@ -123,7 +123,7 @@
               }
             ]
           },
-          "unit": "percentunit"
+          "unit": "percent"
         },
         "overrides": []
       },
@@ -349,7 +349,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "iops"
         },
         "overrides": []
       },
@@ -463,7 +464,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "Bps"
         },
         "overrides": []
       },
@@ -577,7 +579,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "ms"
         },
         "overrides": []
       },
@@ -704,7 +707,8 @@
                 "value": 80
               }
             ]
-          }
+          },
+          "unit": "Bps"
         },
         "overrides": []
       },
@@ -747,6 +751,7 @@
       "type": "timeseries"
     }
   ],
+  "preload": false,
   "refresh": "10s",
   "schemaVersion": 41,
   "tags": [],
@@ -810,6 +815,5 @@
   "timezone": "",
   "title": "KubeVirt / VM Info",
   "uid": "5079c906-e9ff-4ca3-92b9-4d4ae174576b",
-  "version": 1,
-  "weekStart": ""
+  "version": 1
 }
