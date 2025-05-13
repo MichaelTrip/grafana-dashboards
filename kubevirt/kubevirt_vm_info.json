@@ -46,7 +46,7 @@
       }
     ]
   },
-  "description": "KubeVirt VM Info",
+  "description": "KubeVirt / VM Info",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
