@@ -152,7 +152,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "avg(rate(kubevirt_vmi_vcpu_seconds_total{exported_namespace=\"$namespace\", name=\"$vm\"}[5m])) by (domain, name)",
@@ -267,7 +267,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${datasource}"
           },
           "expr": "kubevirt_vmi_memory_resident_bytes{exported_namespace=\"$namespace\", name=\"$vm\"}",
           "format": "time_series",
@@ -378,7 +378,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(kubevirt_vmi_storage_iops_read_total{exported_namespace=\"$namespace\", name=\"$vm\"}[1m])",
@@ -411,7 +411,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -506,7 +506,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(kubevirt_vmi_storage_write_traffic_bytes_total{exported_namespace=\"$namespace\", name=\"$vm\"}[1m])",
@@ -606,7 +606,7 @@
         {
           "datasource": {
             "type": "prometheus",
-            "uid": "${DS_PROMETHEUS}"
+            "uid": "${datasource}"
           },
           "editorMode": "code",
           "expr": "irate(kubevirt_vmi_storage_read_times_seconds_total{exported_namespace=\"$namespace\", name=\"$vm\"}[1m])",
@@ -652,7 +652,7 @@
     {
       "datasource": {
         "type": "prometheus",
-        "uid": "${DS_PROMETHEUS}"
+        "uid": "${datasource}"
       },
       "fieldConfig": {
         "defaults": {
@@ -766,7 +766,7 @@
         "current": {},
         "datasource": {
           "type": "prometheus",
-          "uid": "${DS_PROMETHEUS}"
+          "uid": "${datasource}"
         },
         "definition": "label_values(kubevirt_vmi_vcpu_seconds_total, exported_namespace)",
         "includeAll": false,
